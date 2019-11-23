@@ -3,18 +3,46 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F81BF7D3238635B500B53D23 /* ConfiguringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BF7D2238635B500B53D23 /* ConfiguringView.swift */; };
+		F81BF7D5238635D500B53D23 /* ConfiguringState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BF7D4238635D500B53D23 /* ConfiguringState.swift */; };
+		F81BF7D7238635F600B53D23 /* ConfiguringEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BF7D6238635F600B53D23 /* ConfiguringEvent.swift */; };
+		F81BF7D92388388200B53D23 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BF7D82388388200B53D23 /* Activity.swift */; };
 		F85DEB9B23821AEE00C7E977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85DEB9A23821AEE00C7E977 /* AppDelegate.swift */; };
 		F85DEB9D23821AEE00C7E977 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85DEB9C23821AEE00C7E977 /* SceneDelegate.swift */; };
-		F85DEB9F23821AEE00C7E977 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85DEB9E23821AEE00C7E977 /* ContentView.swift */; };
+		F85DEB9F23821AEE00C7E977 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85DEB9E23821AEE00C7E977 /* AppView.swift */; };
 		F85DEBA123821AF200C7E977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85DEBA023821AF200C7E977 /* Assets.xcassets */; };
 		F85DEBA423821AF200C7E977 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85DEBA323821AF200C7E977 /* Preview Assets.xcassets */; };
 		F85DEBA723821AF200C7E977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F85DEBA523821AF200C7E977 /* LaunchScreen.storyboard */; };
 		F85DEBB223821AF200C7E977 /* swiftui_feedbackloopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85DEBB123821AF200C7E977 /* swiftui_feedbackloopTests.swift */; };
 		F85DEBBD23821AF200C7E977 /* swiftui_feedbackloopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85DEBBC23821AF200C7E977 /* swiftui_feedbackloopUITests.swift */; };
+		F85DEBCC23821E8000C7E977 /* CombineFeedback in Frameworks */ = {isa = PBXBuildFile; productRef = F85DEBCB23821E8000C7E977 /* CombineFeedback */; };
+		F85DEBCE23821E8000C7E977 /* CombineFeedbackUI in Frameworks */ = {isa = PBXBuildFile; productRef = F85DEBCD23821E8000C7E977 /* CombineFeedbackUI */; };
+		F8ECED5B23843053009C2BD7 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED5A23843053009C2BD7 /* AppState.swift */; };
+		F8ECED5D23843115009C2BD7 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED5C23843115009C2BD7 /* Builder.swift */; };
+		F8ECED612384526D009C2BD7 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED602384526D009C2BD7 /* AuthState.swift */; };
+		F8ECED632384528F009C2BD7 /* OnboardingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED622384528F009C2BD7 /* OnboardingState.swift */; };
+		F8ECED65238452D3009C2BD7 /* HomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED64238452D3009C2BD7 /* HomeState.swift */; };
+		F8ECED6723845310009C2BD7 /* AuthEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED6623845310009C2BD7 /* AuthEvent.swift */; };
+		F8ECED6A23845BEF009C2BD7 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED6923845BEF009C2BD7 /* Auth.swift */; };
+		F8ECED6C23845EA7009C2BD7 /* OnboardingEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED6B23845EA7009C2BD7 /* OnboardingEvent.swift */; };
+		F8ECED6E238465FE009C2BD7 /* ConfiguringViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED6D238465FE009C2BD7 /* ConfiguringViewModel.swift */; };
+		F8ECED7023847A88009C2BD7 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED6F23847A88009C2BD7 /* AuthView.swift */; };
+		F8ECED7223847A9A009C2BD7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED7123847A9A009C2BD7 /* OnboardingView.swift */; };
+		F8ECED7423847AAC009C2BD7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED7323847AAC009C2BD7 /* HomeView.swift */; };
+		F8ECED7623847D3B009C2BD7 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED7523847D3B009C2BD7 /* AuthViewModel.swift */; };
+		F8ECED7A2384B796009C2BD7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED792384B796009C2BD7 /* LoginViewModel.swift */; };
+		F8ECED7C2384B7B5009C2BD7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED7B2384B7B5009C2BD7 /* LoginView.swift */; };
+		F8ECED7E2384BCD5009C2BD7 /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED7D2384BCD5009C2BD7 /* LoginState.swift */; };
+		F8ECED802384BCE0009C2BD7 /* LoginEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED7F2384BCE0009C2BD7 /* LoginEvent.swift */; };
+		F8ECED822384BFD8009C2BD7 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED812384BFD8009C2BD7 /* RegistrationView.swift */; };
+		F8ECED842385A6DD009C2BD7 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED832385A6DD009C2BD7 /* OnboardingViewModel.swift */; };
+		F8ECED862385A8CE009C2BD7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED852385A8CE009C2BD7 /* HomeViewModel.swift */; };
+		F8ECED882385A8DC009C2BD7 /* HomeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED872385A8DC009C2BD7 /* HomeEvent.swift */; };
+		F8ECED8A2385A91B009C2BD7 /* AccountState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ECED892385A91B009C2BD7 /* AccountState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +63,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F81BF7D2238635B500B53D23 /* ConfiguringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguringView.swift; sourceTree = "<group>"; };
+		F81BF7D4238635D500B53D23 /* ConfiguringState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguringState.swift; sourceTree = "<group>"; };
+		F81BF7D6238635F600B53D23 /* ConfiguringEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguringEvent.swift; sourceTree = "<group>"; };
+		F81BF7D82388388200B53D23 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		F85DEB9723821AEE00C7E977 /* swiftui-feedbackloop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-feedbackloop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85DEB9A23821AEE00C7E977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F85DEB9C23821AEE00C7E977 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F85DEB9E23821AEE00C7E977 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F85DEB9E23821AEE00C7E977 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		F85DEBA023821AF200C7E977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F85DEBA323821AF200C7E977 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F85DEBA623821AF200C7E977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +81,28 @@
 		F85DEBB823821AF200C7E977 /* swiftui-feedbackloopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swiftui-feedbackloopUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85DEBBC23821AF200C7E977 /* swiftui_feedbackloopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_feedbackloopUITests.swift; sourceTree = "<group>"; };
 		F85DEBBE23821AF200C7E977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8ECED5A23843053009C2BD7 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		F8ECED5C23843115009C2BD7 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		F8ECED602384526D009C2BD7 /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		F8ECED622384528F009C2BD7 /* OnboardingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingState.swift; sourceTree = "<group>"; };
+		F8ECED64238452D3009C2BD7 /* HomeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeState.swift; sourceTree = "<group>"; };
+		F8ECED6623845310009C2BD7 /* AuthEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEvent.swift; sourceTree = "<group>"; };
+		F8ECED6923845BEF009C2BD7 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		F8ECED6B23845EA7009C2BD7 /* OnboardingEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEvent.swift; sourceTree = "<group>"; };
+		F8ECED6D238465FE009C2BD7 /* ConfiguringViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguringViewModel.swift; sourceTree = "<group>"; };
+		F8ECED6F23847A88009C2BD7 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		F8ECED7123847A9A009C2BD7 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		F8ECED7323847AAC009C2BD7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F8ECED7523847D3B009C2BD7 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		F8ECED792384B796009C2BD7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F8ECED7B2384B7B5009C2BD7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F8ECED7D2384BCD5009C2BD7 /* LoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
+		F8ECED7F2384BCE0009C2BD7 /* LoginEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEvent.swift; sourceTree = "<group>"; };
+		F8ECED812384BFD8009C2BD7 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		F8ECED832385A6DD009C2BD7 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		F8ECED852385A8CE009C2BD7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F8ECED872385A8DC009C2BD7 /* HomeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEvent.swift; sourceTree = "<group>"; };
+		F8ECED892385A91B009C2BD7 /* AccountState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F85DEBCC23821E8000C7E977 /* CombineFeedback in Frameworks */,
+				F85DEBCE23821E8000C7E977 /* CombineFeedbackUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +132,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F81BF7D12386348900B53D23 /* Configuring */ = {
+			isa = PBXGroup;
+			children = (
+				F8ECED6D238465FE009C2BD7 /* ConfiguringViewModel.swift */,
+				F81BF7D2238635B500B53D23 /* ConfiguringView.swift */,
+				F81BF7D4238635D500B53D23 /* ConfiguringState.swift */,
+				F81BF7D6238635F600B53D23 /* ConfiguringEvent.swift */,
+			);
+			path = Configuring;
+			sourceTree = "<group>";
+		};
 		F85DEB8E23821AEE00C7E977 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +166,11 @@
 		F85DEB9923821AEE00C7E977 /* swiftui-feedbackloop */ = {
 			isa = PBXGroup;
 			children = (
+				F8ECED4E23842AE4009C2BD7 /* Core */,
+				F8ECED4C23842AC0009C2BD7 /* Services */,
+				F8ECED4D23842AC8009C2BD7 /* Features */,
 				F85DEB9A23821AEE00C7E977 /* AppDelegate.swift */,
 				F85DEB9C23821AEE00C7E977 /* SceneDelegate.swift */,
-				F85DEB9E23821AEE00C7E977 /* ContentView.swift */,
 				F85DEBA023821AF200C7E977 /* Assets.xcassets */,
 				F85DEBA523821AF200C7E977 /* LaunchScreen.storyboard */,
 				F85DEBA823821AF200C7E977 /* Info.plist */,
@@ -136,6 +205,163 @@
 			path = "swiftui-feedbackloopUITests";
 			sourceTree = "<group>";
 		};
+		F8ECED4C23842AC0009C2BD7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F8ECED6823845BDD009C2BD7 /* Models */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F8ECED4D23842AC8009C2BD7 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F85DEB9E23821AEE00C7E977 /* AppView.swift */,
+				F8ECED5A23843053009C2BD7 /* AppState.swift */,
+				F81BF7D12386348900B53D23 /* Configuring */,
+				F8ECED5123842BE7009C2BD7 /* Home */,
+				F8ECED5023842BD0009C2BD7 /* Onboarding */,
+				F8ECED4F23842B9F009C2BD7 /* Authentication */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F8ECED4E23842AE4009C2BD7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F8ECED5C23843115009C2BD7 /* Builder.swift */,
+				F81BF7D82388388200B53D23 /* Activity.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F8ECED4F23842B9F009C2BD7 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F8ECED782384B6DA009C2BD7 /* Registration */,
+				F8ECED772384B6CE009C2BD7 /* Login */,
+				F8ECED602384526D009C2BD7 /* AuthState.swift */,
+				F8ECED6623845310009C2BD7 /* AuthEvent.swift */,
+				F8ECED6F23847A88009C2BD7 /* AuthView.swift */,
+				F8ECED7523847D3B009C2BD7 /* AuthViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F8ECED5023842BD0009C2BD7 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F8ECED622384528F009C2BD7 /* OnboardingState.swift */,
+				F8ECED6B23845EA7009C2BD7 /* OnboardingEvent.swift */,
+				F8ECED7123847A9A009C2BD7 /* OnboardingView.swift */,
+				F8ECED832385A6DD009C2BD7 /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F8ECED5123842BE7009C2BD7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F8ECED5223842BFA009C2BD7 /* Dashboard */,
+				F8ECED5323842C08009C2BD7 /* Favourite */,
+				F8ECED5423842C42009C2BD7 /* Account */,
+				F8ECED892385A91B009C2BD7 /* AccountState.swift */,
+				F8ECED5523842C4A009C2BD7 /* Settings */,
+				F8ECED64238452D3009C2BD7 /* HomeState.swift */,
+				F8ECED872385A8DC009C2BD7 /* HomeEvent.swift */,
+				F8ECED7323847AAC009C2BD7 /* HomeView.swift */,
+				F8ECED852385A8CE009C2BD7 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F8ECED5223842BFA009C2BD7 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		F8ECED5323842C08009C2BD7 /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favourite;
+			sourceTree = "<group>";
+		};
+		F8ECED5423842C42009C2BD7 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				F8ECED5623842C55009C2BD7 /* Profile */,
+				F8ECED5723842C62009C2BD7 /* Privacy */,
+				F8ECED5923842CDD009C2BD7 /* Security */,
+				F8ECED5823842C80009C2BD7 /* QA */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		F8ECED5523842C4A009C2BD7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F8ECED5623842C55009C2BD7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F8ECED5723842C62009C2BD7 /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
+		F8ECED5823842C80009C2BD7 /* QA */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = QA;
+			sourceTree = "<group>";
+		};
+		F8ECED5923842CDD009C2BD7 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		F8ECED6823845BDD009C2BD7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8ECED6923845BEF009C2BD7 /* Auth.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F8ECED772384B6CE009C2BD7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F8ECED7D2384BCD5009C2BD7 /* LoginState.swift */,
+				F8ECED7F2384BCE0009C2BD7 /* LoginEvent.swift */,
+				F8ECED7B2384B7B5009C2BD7 /* LoginView.swift */,
+				F8ECED792384B796009C2BD7 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F8ECED782384B6DA009C2BD7 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				F8ECED812384BFD8009C2BD7 /* RegistrationView.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +378,10 @@
 			dependencies = (
 			);
 			name = "swiftui-feedbackloop";
+			packageProductDependencies = (
+				F85DEBCB23821E8000C7E977 /* CombineFeedback */,
+				F85DEBCD23821E8000C7E977 /* CombineFeedbackUI */,
+			);
 			productName = "swiftui-feedbackloop";
 			productReference = F85DEB9723821AEE00C7E977 /* swiftui-feedbackloop.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +454,9 @@
 				Base,
 			);
 			mainGroup = F85DEB8E23821AEE00C7E977;
+			packageReferences = (
+				F85DEBCA23821E8000C7E977 /* XCRemoteSwiftPackageReference "CombineFeedback" */,
+			);
 			productRefGroup = F85DEB9823821AEE00C7E977 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,9 +500,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8ECED7023847A88009C2BD7 /* AuthView.swift in Sources */,
 				F85DEB9B23821AEE00C7E977 /* AppDelegate.swift in Sources */,
+				F8ECED6C23845EA7009C2BD7 /* OnboardingEvent.swift in Sources */,
+				F8ECED7223847A9A009C2BD7 /* OnboardingView.swift in Sources */,
 				F85DEB9D23821AEE00C7E977 /* SceneDelegate.swift in Sources */,
-				F85DEB9F23821AEE00C7E977 /* ContentView.swift in Sources */,
+				F8ECED7E2384BCD5009C2BD7 /* LoginState.swift in Sources */,
+				F8ECED882385A8DC009C2BD7 /* HomeEvent.swift in Sources */,
+				F8ECED6E238465FE009C2BD7 /* ConfiguringViewModel.swift in Sources */,
+				F8ECED6723845310009C2BD7 /* AuthEvent.swift in Sources */,
+				F8ECED7623847D3B009C2BD7 /* AuthViewModel.swift in Sources */,
+				F85DEB9F23821AEE00C7E977 /* AppView.swift in Sources */,
+				F8ECED5B23843053009C2BD7 /* AppState.swift in Sources */,
+				F8ECED822384BFD8009C2BD7 /* RegistrationView.swift in Sources */,
+				F8ECED65238452D3009C2BD7 /* HomeState.swift in Sources */,
+				F8ECED6A23845BEF009C2BD7 /* Auth.swift in Sources */,
+				F8ECED8A2385A91B009C2BD7 /* AccountState.swift in Sources */,
+				F8ECED842385A6DD009C2BD7 /* OnboardingViewModel.swift in Sources */,
+				F8ECED7A2384B796009C2BD7 /* LoginViewModel.swift in Sources */,
+				F8ECED632384528F009C2BD7 /* OnboardingState.swift in Sources */,
+				F81BF7D3238635B500B53D23 /* ConfiguringView.swift in Sources */,
+				F81BF7D5238635D500B53D23 /* ConfiguringState.swift in Sources */,
+				F8ECED7423847AAC009C2BD7 /* HomeView.swift in Sources */,
+				F8ECED862385A8CE009C2BD7 /* HomeViewModel.swift in Sources */,
+				F8ECED802384BCE0009C2BD7 /* LoginEvent.swift in Sources */,
+				F8ECED7C2384B7B5009C2BD7 /* LoginView.swift in Sources */,
+				F81BF7D92388388200B53D23 /* Activity.swift in Sources */,
+				F8ECED5D23843115009C2BD7 /* Builder.swift in Sources */,
+				F8ECED612384526D009C2BD7 /* AuthState.swift in Sources */,
+				F81BF7D7238635F600B53D23 /* ConfiguringEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +847,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F85DEBCA23821E8000C7E977 /* XCRemoteSwiftPackageReference "CombineFeedback" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sergdort/CombineFeedback.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F85DEBCB23821E8000C7E977 /* CombineFeedback */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F85DEBCA23821E8000C7E977 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
+			productName = CombineFeedback;
+		};
+		F85DEBCD23821E8000C7E977 /* CombineFeedbackUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F85DEBCA23821E8000C7E977 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
+			productName = CombineFeedbackUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F85DEB8F23821AEE00C7E977 /* Project object */;
 }
