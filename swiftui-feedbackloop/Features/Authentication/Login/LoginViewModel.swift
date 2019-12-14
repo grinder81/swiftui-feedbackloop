@@ -12,9 +12,9 @@ import CombineFeedback
 import CombineFeedbackUI
 
 final class LoginViewModel: ViewModel<LoginState, LoginEvent> {
-    init(initial: LoginState, store: Store) {
+    init(initial: LoginState, appState: AppState) {
         super.init(initial: initial,
-                   feedbacks: [LoginViewModel.whenAuthenticated(store),
+                   feedbacks: [LoginViewModel.whenAuthenticated(appState),
                                LoginViewModel.willvalidateUsername()],
                    scheduler: DispatchQueue.main,
                    reducer: LoginViewModel.reduce
@@ -34,12 +34,12 @@ final class LoginViewModel: ViewModel<LoginState, LoginEvent> {
     }
     
     
-    static func whenAuthenticated(_ store: Store) -> Feedback<LoginState, LoginEvent> {
+    static func whenAuthenticated(_ appState: AppState) -> Feedback<LoginState, LoginEvent> {
         return Feedback(effects: { (state) -> AnyPublisher<LoginEvent, Never> in
             guard state.status == .submitting else {
                 return Empty().eraseToAnyPublisher()
             }
-            store.appState.status = .launching(HomeState())
+            appState.status = .launching(HomeState())
             return Empty().eraseToAnyPublisher()
         })
     }
@@ -48,8 +48,9 @@ final class LoginViewModel: ViewModel<LoginState, LoginEvent> {
         switch event {
         case .didChangeUserName(let name):
             //print(name)
-            state.set(\.userName, name)
-            return state.set(\.status, .validatingUsername)
+            return state
+                .set(\.userName, name)
+                .set(\.status, .validatingUsername)
         case .login:
             return state.set(\.status, .submitting)
         default:

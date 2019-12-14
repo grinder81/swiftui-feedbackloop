@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct AppState {
-    var status: AppStatus = .configuring
+class AppState: ObservableObject {
+    @Published var status: AppStatus = .configuring
 }
 
 enum AppStatus {

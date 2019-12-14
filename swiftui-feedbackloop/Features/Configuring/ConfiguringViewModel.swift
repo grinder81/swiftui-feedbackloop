@@ -13,24 +13,24 @@ import CombineFeedbackUI
 
 
 final class ConfiguringViewModel: ViewModel<ConfiguringState, ConfiguringEvent> {
-    init(initial: ConfiguringState, store: Store) {
+    init(initial: ConfiguringState, appState: AppState) {
         super.init(initial: initial,
                    feedbacks: [
                     ConfiguringViewModel.willCheckAuthentication(),
-                    ConfiguringViewModel.willChangeAppState(store)],
+                    ConfiguringViewModel.willChangeAppState(appState)],
                    scheduler: DispatchQueue.main,
                    reducer: ConfiguringViewModel.reduce
         )
     }
     
-    static func willChangeAppState(_ store: Store) -> Feedback<ConfiguringState, ConfiguringEvent> {
+    static func willChangeAppState(_ appState: AppState) -> Feedback<ConfiguringState, ConfiguringEvent> {
         return Feedback(effects: { (state) -> AnyPublisher<ConfiguringEvent, Never> in
             if case ConfiguringStatus.loaded(let auth) = state.status {
                 switch auth {
                 case true:
-                    store.appState.status = .launching(HomeState())
+                    appState.status = .launching(HomeState())
                 default:
-                    store.appState.status = .authenticating(AuthState())
+                    appState.status = .authenticating(AuthState())
                 }
             }
             return Empty().eraseToAnyPublisher()

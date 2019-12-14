@@ -11,10 +11,11 @@ import CombineFeedback
 import CombineFeedbackUI
 
 struct AppView: View {
-    @EnvironmentObject var store: Store
+    @Environment(\.container) var container: DependencyContainer
+    @EnvironmentObject var appState: AppState
     
     var body: some View {
-        switch store.appState.status {
+        switch appState.status {
         case .authenticating(let authState):
             return AnyView(Widget(viewModel: AuthViewModel(initial: authState), render: AuthView.init))
         case .onboarding(let onboardingState):
@@ -22,8 +23,14 @@ struct AppView: View {
         case .launching(let homeState):
             return AnyView(Widget(viewModel: HomeViewModel(initial: homeState), render: HomeView.init))
         case .configuring:
-            return AnyView(Widget(viewModel: ConfiguringViewModel(initial: ConfiguringState(), store: store), render: ConfiguringView.init))
+            return AnyView(Widget(viewModel: ConfiguringViewModel(initial: ConfiguringState(), appState: appState), render: ConfiguringView.init))
         }
+    }
+}
+
+extension View {
+    func eraseToAnyView() -> AnyView {
+        return AnyView(self)
     }
 }
 
@@ -31,6 +38,8 @@ struct AppView_Previews: PreviewProvider {
     
     static var previews: some View {
         AppView()
+            .environment(\.container, DependencyContainer.defaultValue)
+            .environmentObject(AppState())
     }
 }
 

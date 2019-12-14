@@ -27,6 +27,6 @@ struct ConfiguringView: View {
 
 struct ConfiguringView_Previews: PreviewProvider {
     static var previews: some View {
-        Widget(viewModel: ConfiguringViewModel(initial: ConfiguringState(), store: Store()), render: ConfiguringView.init)
+        Widget(viewModel: ConfiguringViewModel(initial: ConfiguringState(), appState: AppState()), render: ConfiguringView.init)
     }
 }

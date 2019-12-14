@@ -20,7 +20,7 @@ extension HomeState: Equatable {
 }
 
 
-enum HomeStatus {
+enum HomeStatus: Hashable {
     case dashboard
     case favourite
     case account(AccountState)

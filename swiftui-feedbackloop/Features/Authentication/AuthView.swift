@@ -11,7 +11,7 @@ import CombineFeedback
 import CombineFeedbackUI
 
 struct AuthView: View {
-    @EnvironmentObject var store: Store
+    @EnvironmentObject var appState: AppState
     
     typealias State = AuthState
     typealias Event = AuthEvent
@@ -26,10 +26,10 @@ struct AuthView: View {
         return NavigationView {
             GeometryReader { geometry in
                 VStack {
-                    NavigationLink(destination: Widget(viewModel: LoginViewModel(initial: LoginState(), store: self.store), render: LoginView.init)) {
+                    NavigationLink(destination: Widget(viewModel: LoginViewModel(initial: LoginState(), appState: self.appState), render: LoginView.init)) {
                         Text("Login")
                             .frame(width: geometry.size.width / 2, height: 60, alignment: .center)
-                            .background(Color.green)
+                            .background(Color("brandPrimary"))
 
                     }
                     
@@ -39,7 +39,7 @@ struct AuthView: View {
                     NavigationLink(destination: RegistrationView()) {
                         Text("Registration")
                             .frame(width: geometry.size.width / 2, height: 60, alignment: .center)
-                            .background(Color.green)
+                            .background(Color("brandPrimary"))
                     }
                 }
             }
@@ -50,6 +50,13 @@ struct AuthView: View {
 struct AuthView_Previews: PreviewProvider {
 
     static var previews: some View {
-        Widget(viewModel: AuthViewModel(initial: AuthState()), render: AuthView.init)
+        Group {
+            Widget(viewModel: AuthViewModel(initial: AuthState()), render: AuthView.init)
+                .environment(\.colorScheme, .light)
+            
+            Widget(viewModel: AuthViewModel(initial: AuthState()), render: AuthView.init)
+                .environment(\.colorScheme, .dark)
+
+        }
     }
 }

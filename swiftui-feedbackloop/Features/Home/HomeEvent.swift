@@ -9,8 +9,5 @@
 import Foundation
 
 enum HomeEvent {
-    case showDashboard
-    case showFavourite
-    case showAccount
-    case showSettings
+    case didChange
 }

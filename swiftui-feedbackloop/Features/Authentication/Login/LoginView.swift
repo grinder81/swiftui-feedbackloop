@@ -38,6 +38,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        Widget(viewModel: LoginViewModel(initial: LoginState(), store: Store()), render: LoginView.init)
+        Widget(viewModel: LoginViewModel(initial: LoginState(), appState: AppState()), render: LoginView.init)
     }
 }
